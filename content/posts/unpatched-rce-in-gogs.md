@@ -1,6 +1,6 @@
 +++
 date = '2024-11-13T10:22:25-05:00'
-draft = true
+draft = false
 title = 'Unpatched Remote Code Execution in Gogs'
 +++
 
