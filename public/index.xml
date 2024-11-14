@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vulnerability research and more</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Vulnerability research and more</description>
+    <generator>Hugo -- 0.138.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Nov 2024 10:22:25 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unpatched Remote Code Execution in Gogs</title>
+      <link>http://localhost:1313/posts/2024/11/unpatched-remote-code-execution-in-gogs/</link>
+      <pubDate>Wed, 13 Nov 2024 10:22:25 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2024/11/unpatched-remote-code-execution-in-gogs/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://gogs.io/&#34;&gt;Gogs&lt;/a&gt; self-hosted Git service is vulnerable to symbolic link path traversal that enables remote code execution (&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-44625&#34;&gt;CVE-2024-44625&lt;/a&gt;). The latest version at the time of writing (0.13.0) is affected. This vulnerability is exploitable against a default install, with the only attacker requirement being access to an account that can push to a repository and edit that repository&amp;rsquo;s files from the web interface.&lt;/p&gt;
+&lt;p&gt;Per Gogs&amp;rsquo; &lt;a href=&#34;https://github.com/gogs/gogs/blob/2541348408e120e9acd4ff7fb6419e3a00233c67/SECURITY.md&#34;&gt;&lt;code&gt;SECURITY.md&lt;/code&gt;&lt;/a&gt;, I reported this issue to the maintainers as a GitHub advisory on August 10, 2024. Though I followed up multiple times, my report was never acknowledged and remains unaddressed at the time of writing. My experience here was not an anomaly; there is currently an &lt;a href=&#34;https://github.com/gogs/gogs/issues/7777&#34;&gt;open issue&lt;/a&gt; tracking several other high and critical vulnerabilities left unpatched due to a lack of response from the Gogs developers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

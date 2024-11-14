@@ -1,0 +1,9 @@
+baseURL = 'https://fysac.github.io/'
+languageCode = 'en-us'
+title = 'Vulnerability research and more'
+theme = "PaperMod"
+markup.highlight.noClasses = false
+
+[permalinks]
+  [permalinks.page]
+    posts = '/posts/:year/:month/:slug/'
