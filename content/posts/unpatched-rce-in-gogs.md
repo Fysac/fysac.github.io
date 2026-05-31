@@ -4,6 +4,12 @@ draft = false
 title = 'Unpatched Remote Code Execution in Gogs'
 +++
 
+**Long-overdue update (May 31, 2026):** This vulnerability was patched in Gogs 0.13.1, released on December 22, 2024. It turned out that the issue was [previously reported](https://github.com/gogs/gogs/issues/7582) in October 2023, nearly a year before my own report, and had likewise been ignored until the backlog of CVEs [started to drum up attention](https://github.com/gogs/gogs/issues/7777).
+
+My overall recommendation still stands: don't use Gogs; use Gitea or Forgejo.
+
+---
+
 The [Gogs](https://gogs.io/) self-hosted Git service is vulnerable to symbolic link path traversal that enables remote code execution ([CVE-2024-44625](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-44625)). The latest version at the time of writing (0.13.0) is affected. This vulnerability is exploitable against a default install, with the only attacker requirement being access to an account that can push to a repository and edit that repository's files from the web interface.
 
 Per Gogs' [`SECURITY.md`](https://github.com/gogs/gogs/blob/2541348408e120e9acd4ff7fb6419e3a00233c67/SECURITY.md), I reported this issue to the maintainers as a GitHub advisory on August 10, 2024. Though I followed up multiple times, my report was never acknowledged and remains unaddressed at the time of writing. My experience here was not an anomaly; there is currently an [open issue](https://github.com/gogs/gogs/issues/7777) tracking several other high and critical vulnerabilities left unpatched due to a lack of response from the Gogs developers.
